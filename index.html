@@ -1,142 +1,214 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Karun Bourishetty - Full Stack Developer</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <meta name="description" content="Karun Bourishetty — Full Stack Developer & DevOps Engineer. Java, Spring Boot, GCP, and CI/CD.">
+    <meta name="color-scheme" content="dark">
+    <title>Karun Bourishetty — Full Stack Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" defer></script>
     <script src="script.js" defer></script>
 </head>
 <body>
-    <header class="bg-primary text-white text-center py-5">
-        <h1>Karun Bourishetty</h1>
-        <p>Full Stack Developer | DevOps Engineer</p>
-    </header>
+    <a class="skip-link" href="#about">Skip to content</a>
 
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">KB</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
+    <nav class="nav" aria-label="Primary">
+        <div class="nav-inner">
+            <a class="nav-brand" href="#top">KB<span class="accent">.</span></a>
+            <button class="nav-toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Toggle navigation">
+                <span></span><span></span><span></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-                </ul>
-            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
         </div>
     </nav>
 
-    <section id="about" class="py-5 text-center">
+    <header class="hero" id="top">
         <div class="container">
-            <h2>About Me</h2>
-            <p class="lead">
-                I am a results-oriented Full Stack Developer with over 5 years of experience.
-                Skilled in Java, Spring Boot, and cloud platforms. Passionate about building scalable solutions.
+            <p class="hero-kicker">Hi, my name is</p>
+            <h1 class="hero-name">Karun Bourishetty<span class="accent">.</span></h1>
+            <p class="hero-tagline">Full Stack Developer &amp; DevOps Engineer</p>
+            <p class="hero-summary">
+                I design, build, and ship scalable web applications and data-driven solutions —
+                Java, Spring Boot, and Google Cloud Platform — currently keeping CI/CD humming
+                at Ford Motor Company.
             </p>
+            <div class="hero-actions">
+                <a class="btn btn-primary" href="#contact">Get in touch</a>
+                <a class="btn btn-ghost" href="#experience">View experience</a>
+            </div>
         </div>
-    </section>
+    </header>
 
-    <section id="experience" class="py-5 bg-light">
-        <div class="container">
-            <h2 class="text-center">Experience</h2>
-            <div id="experienceCarousel" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <div class="card p-3">
-                            <h3>DevOps Engineer, Ford Motor Company</h3>
-                            <p><strong>August 2024 - Present</strong></p>
-                            <ul>
-                                <li>Implemented CI tools to enhance development processes.</li>
-                                <li>Collaborated on evolving requirements.</li>
-                                <li>Conducted root cause analysis on pipeline issues.</li>
+    <main>
+        <section id="about" class="section reveal">
+            <div class="container">
+                <h2 class="section-title"><span class="section-index">01.</span> About Me</h2>
+                <p class="section-lead">
+                    Highly skilled and results-oriented Full Stack Developer with over 5 years of
+                    experience designing, developing, and deploying robust, scalable web applications
+                    and data-driven solutions. I work across the entire software development
+                    lifecycle — from conception to deployment and maintenance — with expertise in
+                    Java, Spring Boot, cloud platforms (GCP), and data processing frameworks, and I
+                    enjoy collaborating with cross-functional teams to deliver software that meets
+                    real business needs.
+                </p>
+            </div>
+        </section>
+
+        <section id="experience" class="section reveal">
+            <div class="container">
+                <h2 class="section-title"><span class="section-index">02.</span> Experience</h2>
+                <ol class="timeline">
+                    <li class="timeline-item">
+                        <div class="timeline-card card">
+                            <div class="timeline-header">
+                                <h3>DevOps Engineer</h3>
+                                <p class="timeline-company">Ford Motor Company</p>
+                                <p class="timeline-dates">Aug 2024 — Present</p>
+                            </div>
+                            <ul class="timeline-points">
+                                <li>Implemented and maintained Continuous Integration (CI) tools and infrastructure, ensuring smooth operations and streamlined development processes.</li>
+                                <li>Collaborated with developers to translate evolving requirements into actionable CI enhancements, improving workflow efficiency.</li>
+                                <li>Tested and reviewed code contributions from multiple teams to uphold quality standards and best practices.</li>
+                                <li>Conducted root cause analysis on pipeline and build issues, implementing fixes that minimized downtime and streamlined troubleshooting.</li>
+                                <li>Partnered with cross-functional teams to align CI practices with organizational goals through targeted automation improvements.</li>
                             </ul>
                         </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="card p-3">
-                            <h3>Software Developer, Ford Motor Company</h3>
-                            <p><strong>Jan 2022 - Aug 2024</strong></p>
-                            <ul>
-                                <li>Architected data-driven solutions on Google Cloud Platform.</li>
-                                <li>Designed RESTful APIs using Spring Boot.</li>
-                                <li>Built microservices with Spring Boot and Docker.</li>
+                    </li>
+                    <li class="timeline-item">
+                        <div class="timeline-card card">
+                            <div class="timeline-header">
+                                <h3>Software Developer</h3>
+                                <p class="timeline-company">Ford Motor Company</p>
+                                <p class="timeline-dates">Jan 2022 — Aug 2024</p>
+                            </div>
+                            <ul class="timeline-points">
+                                <li>Architected data-driven solutions on GCP using BigQuery, Dataflow, Cloud Run, and Cloud Functions to ingest, process, and analyze large datasets.</li>
+                                <li>Designed RESTful APIs with Spring Boot and built microservices deployed via Docker on GCP for scalability and fault tolerance.</li>
+                                <li>Implemented CI/CD pipelines with Tekton, reducing deployment time by 50%, and integrated automated vulnerability scanning into the pipeline.</li>
+                                <li>Spearheaded migration of a data pipeline from Google Cloud Pub/Sub to Apache Kafka — 30% higher message throughput, 15% lower latency.</li>
+                                <li>Developed data pipelines integrating multiple sources, improving data processing time by 25%.</li>
+                                <li>Led a major UI overhaul — streamlined navigation, modernized authentication, unified the platform with a shared header — and refactored legacy UI components to modern Angular.</li>
+                                <li>Revamped a core dashboard with powerful data visualization and filtering, and mentored junior developers on cloud-native development and data engineering.</li>
                             </ul>
                         </div>
-                    </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#experienceCarousel" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon"></span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#experienceCarousel" data-bs-slide="next">
-                    <span class="carousel-control-next-icon"></span>
-                </button>
-            </div>
-        </div>
-    </section>
-
-    <section id="education" class="py-5 text-center">
-        <div class="container">
-            <h2>Education</h2>
-            <div class="row justify-content-center">
-                <div class="col-md-4">
-                    <div class="card mb-3">
-                        <div class="card-body">
-                            <h5 class="card-title">Master in Computer Science</h5>
-                            <p class="card-text">Northwest Missouri State University, 2019</p>
+                    </li>
+                    <li class="timeline-item">
+                        <div class="timeline-card card">
+                            <div class="timeline-header">
+                                <h3>Software Developer</h3>
+                                <p class="timeline-company">Founder Sport Group</p>
+                                <p class="timeline-dates">Dec 2020 — Dec 2021</p>
+                            </div>
+                            <ul class="timeline-points">
+                                <li>Developed and maintained a high-performance Order Management System with React.js, Node.js, and PostgreSQL, increasing order processing efficiency by 15%.</li>
+                                <li>Designed RESTful APIs connecting front-end and back-end systems, and integrated AWS S3 and RDS for data security and scalability.</li>
+                                <li>Worked in agile — daily scrums, sprint planning, and retrospectives.</li>
+                            </ul>
                         </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card mb-3">
-                        <div class="card-body">
-                            <h5 class="card-title">Bachelor of Science</h5>
-                            <p class="card-text">Jawaharlal Nehru Technology University, 2018</p>
+                    </li>
+                    <li class="timeline-item">
+                        <div class="timeline-card card">
+                            <div class="timeline-header">
+                                <h3>Software Developer</h3>
+                                <p class="timeline-company">Miracle Software Systems</p>
+                                <p class="timeline-dates">Feb 2020 — Nov 2020</p>
+                            </div>
+                            <ul class="timeline-points">
+                                <li>Developed and maintained Miracle SAP Velocity, extracting data from SAP systems and pushing it to targets like Excel, Azure, and AWS.</li>
+                                <li>Built user interfaces with Angular 8 backed by RESTful APIs.</li>
+                                <li>Optimized database performance by 150% through efficient data insertion techniques.</li>
+                            </ul>
                         </div>
+                    </li>
+                    <li class="timeline-item">
+                        <div class="timeline-card card">
+                            <div class="timeline-header">
+                                <h3>Graduate Assistant (Software)</h3>
+                                <p class="timeline-company">Northwest Missouri State University</p>
+                                <p class="timeline-dates">Jan 2019 — Dec 2019</p>
+                            </div>
+                            <ul class="timeline-points">
+                                <li>Graduate Assistant in the Computer Science department for the C#.NET course; independently supervised classes of 25–35 students.</li>
+                                <li>Improved and designed the course user interface in Canvas; graded and tracked student work.</li>
+                                <li>Mentored students in groups and individually, monitored progress, and provided the professor with performance feedback and curriculum recommendations.</li>
+                            </ul>
+                        </div>
+                    </li>
+                </ol>
+            </div>
+        </section>
+
+        <section id="skills" class="section reveal">
+            <div class="container">
+                <h2 class="section-title"><span class="section-index">03.</span> Skills</h2>
+                <div class="card-grid card-grid-3">
+                    <div class="card">
+                        <h3>Languages &amp; Frameworks</h3>
+                        <ul class="tag-list">
+                            <li>Java</li><li>Spring Boot</li><li>JavaScript</li><li>TypeScript</li>
+                            <li>Angular</li><li>React.js</li><li>Node.js</li><li>C#.NET</li>
+                        </ul>
+                    </div>
+                    <div class="card">
+                        <h3>Cloud &amp; Data</h3>
+                        <ul class="tag-list">
+                            <li>GCP</li><li>BigQuery</li><li>Dataflow</li><li>Cloud Run</li>
+                            <li>Apache Kafka</li><li>AWS</li><li>Azure</li><li>PostgreSQL</li>
+                        </ul>
+                    </div>
+                    <div class="card">
+                        <h3>DevOps &amp; Tools</h3>
+                        <ul class="tag-list">
+                            <li>CI/CD</li><li>Tekton</li><li>Docker</li><li>Microservices</li>
+                            <li>REST APIs</li><li>Agile / Scrum</li>
+                        </ul>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section id="skills" class="py-5 bg-light">
-        <div class="container text-center">
-            <h2>Skills</h2>
-            <div class="row">
-                <div class="col-md-4">
-                    <h4>Programming</h4>
-                    <p>Java, Python, JavaScript, TypeScript</p>
-                </div>
-                <div class="col-md-4">
-                    <h4>Frameworks</h4>
-                    <p>Spring Boot, React.js, Angular</p>
-                </div>
-                <div class="col-md-4">
-                    <h4>Cloud Platforms</h4>
-                    <p>GCP, AWS, Azure</p>
+        <section id="education" class="section reveal">
+            <div class="container">
+                <h2 class="section-title"><span class="section-index">04.</span> Education</h2>
+                <div class="card-grid">
+                    <div class="card">
+                        <h3>Master in Computer Science</h3>
+                        <p class="card-sub">Northwest Missouri State University</p>
+                        <p class="card-meta">2019</p>
+                    </div>
+                    <div class="card">
+                        <h3>Bachelor of Science</h3>
+                        <p class="card-sub">Jawaharlal Nehru Technology University</p>
+                        <p class="card-meta">2018</p>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section id="contact" class="py-5 text-center">
-        <div class="container">
-            <h2>Contact</h2>
-            <p>Email: <a href="mailto:KARUNB09@gmail.com">KARUNB09@gmail.com</a></p>
-            <p>Phone: 248-403-4692</p>
-            <p>Location: Farmington Hills, MI</p>
-        </div>
-    </section>
+        <section id="contact" class="section reveal">
+            <div class="container contact">
+                <h2 class="section-title"><span class="section-index">05.</span> Contact</h2>
+                <p class="section-lead">
+                    I'm open to new opportunities and collaborations — my inbox is always open.
+                </p>
+                <a class="btn btn-primary btn-lg" href="mailto:karunb09@gmail.com">karunb09@gmail.com</a>
+                <p class="contact-meta">248-403-4692 &nbsp;·&nbsp; Farmington Hills, MI</p>
+            </div>
+        </section>
+    </main>
 
-    <footer class="bg-dark text-white text-center py-3">
-        <p>© 2024 Karun Bourishetty</p>
+    <footer class="footer">
+        <p>© <span id="year">2026</span> Karun Bourishetty · Built with plain HTML &amp; CSS</p>
     </footer>
 </body>
 </html>
