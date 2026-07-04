@@ -186,8 +186,31 @@ body {
 .hero-actions {
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
     gap: 0.75rem;
     margin-top: 2rem;
+}
+
+.socials {
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+    margin-left: 0.5rem;
+}
+
+.socials a {
+    display: inline-flex;
+    padding: 0.55rem;
+    color: var(--text-muted);
+    border-radius: 10px;
+    transition: color 0.2s, background-color 0.2s, transform 0.15s;
+}
+
+.socials a:hover,
+.socials a:focus-visible {
+    color: var(--accent);
+    background: var(--accent-soft);
+    transform: translateY(-2px);
 }
 
 /* ---------- Buttons ---------- */
@@ -339,6 +362,22 @@ body {
 
 .timeline-header h3 {
     font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.6rem;
+}
+
+.timeline-badge {
+    background: var(--accent-soft);
+    color: var(--accent);
+    border: 1px solid rgba(79, 209, 197, 0.25);
+    padding: 0.1rem 0.6rem;
+    border-radius: 999px;
+    font-size: 0.7rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
 }
 
 .timeline-company {
@@ -401,6 +440,23 @@ body {
     margin-top: 1.5rem;
     font-size: 0.95rem;
 }
+
+.contact-links {
+    margin-top: 0.5rem;
+    color: var(--text-muted);
+    font-size: 0.95rem;
+    display: flex;
+    justify-content: center;
+    gap: 0.75rem;
+}
+
+.contact-links a {
+    color: var(--accent);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.contact-links a:hover { text-decoration: underline; }
 
 .footer {
     border-top: 1px solid var(--border);
